@@ -1,0 +1,12 @@
+<resources>
+    <string name="hello_users">Welcome to your favorite food app!</string> <!-- Exemplu de string -->
+    <string name="log_in">Log In</string> <!-- Exemplu de string -->
+    <string name="register">Register</string> <!-- Exemplu de string -->
+    <string name="email">Email</string> <!-- Exemplu de string -->
+    <string name="password">Password</string> <!-- Exemplu de string -->
+    <string name="log_in_btn">Log In</string> <!-- Exemplu de string -->
+    <string name="register_btn">Register</string> <!-- Exemplu de string -->
+    <string name="name">Name</string> <!-- Exemplu de string -->
+    <string name="app_name">RecipeApp</string>
+    <string name="button_open">Open</string>
+</resources>

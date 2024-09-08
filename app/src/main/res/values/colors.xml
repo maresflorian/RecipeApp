@@ -1,0 +1,10 @@
+<resources>
+    <color name="sky">#87CEEB</color> <!-- Exemplu de culoare; poți ajusta valoarea după preferințe -->
+    <color name="ship_gray">#708090</color> <!-- Exemplu de culoare -->
+    <color name="blueviolet">#8A2BE2</color> <!-- Exemplu de culoare -->
+    <color name="violet">#EE82EE</color> <!-- Exemplu de culoare -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightGray">#A8BAF8</color>
+    <color name="purple_500">#6200EE</color>
+</resources>

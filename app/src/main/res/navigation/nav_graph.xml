@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- LoginFragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.recipeapp.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <!-- Navigare la RegisterFormFragment -->
+        <action
+            android:id="@+id/action_loginFragment_to_registerFormFragment"
+            app:destination="@id/registerFormFragment" />
+        <!-- Navigare la RecipesFragment după autentificare -->
+        <action
+            android:id="@+id/action_loginFragment_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+        <!-- Navigare la LoginFormFragment pentru alt formular de login -->
+        <action
+            android:id="@+id/action_loginFragment_to_loginForm"
+            app:destination="@id/loginForm" />
+    </fragment>
+
+    <!-- RegisterFormFragment -->
+    <fragment
+        android:id="@+id/registerFormFragment"
+        android:name="com.example.recipeapp.fragments.RegisterFormFragment"
+        android:label="RegisterFormFragment"
+        tools:layout="@layout/fragment_register_form">
+        <!-- Navigare la LoginFragment după înregistrare -->
+        <action
+            android:id="@+id/action_registerFormFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <!-- Navigare la RecipesFragment după înregistrare -->
+        <action
+            android:id="@+id/action_registerFormFragment_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+    </fragment>
+
+    <!-- RegisterFragment -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.recipeapp.fragments.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <!-- Navigare la LoginFragment din RegisterFragment -->
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <!-- Navigare la RecipesFragment după înregistrare -->
+        <action
+            android:id="@+id/action_registerFragment_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+    </fragment>
+
+    <!-- RecipesFragment -->
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.example.recipeapp.fragments.RecipesFragment"
+        android:label="RecipesFragment"
+        tools:layout="@layout/fragment_recipes" />
+
+    <!-- LoginFormFragment (formular alternativ de login) -->
+    <fragment
+        android:id="@+id/loginForm"
+        android:name="com.example.recipeapp.fragments.LoginForm"
+        android:label="LoginForm"
+        tools:layout="@layout/fragment_login_form">
+        <!-- Navigare la RegisterFormFragment -->
+        <action
+            android:id="@+id/action_loginForm_to_registerFormFragment"
+            app:destination="@id/registerFormFragment" />
+        <!-- Navigare la RecipesFragment după autentificare -->
+        <action
+            android:id="@+id/action_loginForm_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+    </fragment>
+
+</navigation>
