@@ -2,15 +2,8 @@ package com.example.recipeapp.utils.extensions
 
 import android.util.Log
 
-//Creare extensii are clasei String - functionalitate pe care nu o are
-//Creare functionalitate pentru String pentru creare log cu acel string
-
-fun String.logErrorMessage(tag: String = "AppTag"){
-    Log.e(tag, this) //this e stringul care apeleaza metoda. Tag il trimitem asa ca il dam ca param
+// Creare extensie pentru clasa String care adaugă funcționalitatea de a loga mesajele de eroare
+fun String.logErrorMessage(tag: String = "AppTag") {
+    // 'this' se referă la instanța String care apelează extensia
+    Log.e(tag, this)
 }
-
-//fun doSomething(){
-//    val myString = "bla"
-//    //Creaza un log
-//    myString.logErrorMessage()
-//}
